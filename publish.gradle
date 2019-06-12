@@ -7,7 +7,7 @@ group 'com.nmp'
 publishing {
     publications {
         Production(MavenPublication) {
-            artifact ("$buildDir/outputs/aar/library-release.aar")
+            artifact ("E://ortherprojects/finalGenericRecyclerView/GenericRecyclerView/library/build/outputs/aar/library-release.aar")
             groupId this.group
             artifactId 'genericrecyclerview' 
             version this.version

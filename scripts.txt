@@ -1,0 +1,5 @@
+./gradlew clean assemble
+./gradlew publishToMavenLocal
+gradlew assemble
+
+gradlew clean build installDebug bintrayUpload -Ppublish=true
