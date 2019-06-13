@@ -1,19 +1,18 @@
 # GenericRecyclerView
 
-
 Step 1: Add it in your root build.gradle at the end of repositories:
 
 allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+    repositories {
+       maven { url 'https://jitpack.io' } // add at the bottom 
+    }
+}
   
 Step 2: Add the dependency
 
-dependencies {
-	        implementation 'com.github.phatnm96:GenericRecyclerView:Tag'
+
+repositories {
+        implementation 'com.github.phatnm96:GenericRecyclerView:version'
 }
 
 Usage of GenericRecyclerView
@@ -52,8 +51,9 @@ class ContactViewHolder(binding: ItemContactBinding) :
 }
 
 STEP 3: Init your adapter and use it!
+
  ContactAdapter adapter = ContactAdapter(this)
-                adapter.setItems(dummyData())
-                adapter.setListener(this) // OnRecyclerItemClickListener event
+                adapter.setItems(dummyData()) // set data to your adapter
+                adapter.setListener(this) // register a OnRecyclerItemClickListener item lick event
 
 Note: Your ViewHolder's XML layout must use databinding 
